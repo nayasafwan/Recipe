@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
+const connection = require("./database/db");
 
 
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
